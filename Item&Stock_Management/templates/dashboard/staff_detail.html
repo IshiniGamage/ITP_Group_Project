@@ -1,0 +1,52 @@
+{% extends 'partials/base.html' %}
+{% block title %}Staff Page{% endblock %}
+{% block content %}
+{% include 'partials/topnav.html' %}
+
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-2 ">
+
+        </div>
+        <div class="col-md-8 p-4 ">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    Profile Page
+                </div>
+<div class="card-body">
+            <div class="row">
+                <div class="col-md-8 p-4">
+                    <table class="table table-borderless">
+                        <thead>
+                            <span class="h4">Porfile Information</span class="h4">
+
+                            <hr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">ID</th>
+                                <td>{{ workers.id }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Name</th>
+                                <td>{{ workers.first_name }}{{ workers.last_name }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td>{{ workers.email}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Joined Date</th>
+                                <td>{{ workers.date_joined }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

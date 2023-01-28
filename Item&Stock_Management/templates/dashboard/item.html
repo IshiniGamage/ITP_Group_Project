@@ -1,0 +1,78 @@
+{% extends 'partials/base.html' %}
+{% block title %}Item Page{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% include 'partials/topnav.html' %}
+
+<div class="container"  >
+    <div class="row my-4">
+        <div class="col-md-4">
+            {% for message in messages %}
+            {% if message %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+
+            </div>
+            {% endif %}
+            {% endfor %}
+            <div class="border bg-white p-3">
+                <h4>Add Items</h4>
+                <hr>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+                    <input class="btn btn-success btn-block" type="submit" value="Add Item">
+
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        <th scope="col">Name</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Colour</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Activity</th>
+                        <th></th>
+                        
+                    </tr>
+                </thead>
+                </form>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.brand }}</td>
+                        <td>{{ product.colour }}</td>
+                        <td>{{ product.size }}</td>
+                        <td>{{ product.category }}</td>
+                        <td>{{ product.quantity }}</td>
+                        <td>{{ product.price }}</td>
+                        <td>
+                            <a class="btn btn-info btn-sm"  href="{% url 'dashboard-item-update' product.id %}">Update</a>
+                            <a class="btn btn-danger btn-sm" href="{% url 'dashboard-item-delete' product.id %}">Delete</a>
+
+                        </td>
+
+                    </tr>
+                            </div>
+                   
+                </tbody>
+             {% endfor %}
+
+            </table>
+
+            </div>
+        </div>
+</div>
+
+
+
+
+{% endblock %}
