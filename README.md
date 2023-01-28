@@ -12,7 +12,7 @@ SLIIT 2nd Year 2nd Semester ITP module group project
                     
                       
                       
-  # Item Aand Stock Management function Screenshots
+  # Item and Stock Management function Screenshots
 ![employee1](https://user-images.githubusercontent.com/75413812/209738170-c59cb2d1-ce1d-482e-8a59-9df483517de7.PNG)
 ![employee6](https://user-images.githubusercontent.com/75413812/209738201-ddd2b344-7e3d-4c06-aa60-7c32aaed91d6.PNG)
 ![employee8](https://user-images.githubusercontent.com/75413812/209738208-25e4f717-a628-48dc-8316-2dbeda246676.PNG)
