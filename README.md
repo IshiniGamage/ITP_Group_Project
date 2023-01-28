@@ -2,7 +2,7 @@
 SLIIT 2nd Year 2nd Semester ITP module group project
 
 # Fashion Shop Management System (ITP Group Project) 
-## (Item Aand Stock Management Function) 
+## (Item and Stock Management Function) 
 # Used technologies :
                       Python/Django
                       Html/CSS
