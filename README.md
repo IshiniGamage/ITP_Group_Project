@@ -13,6 +13,8 @@ SLIIT 2nd Year 2nd Semester ITP module group project
                       
                       
   # Item and Stock Management function Screenshots
-![image1](https://user-images.githubusercontent.com/IshiniGamage/Screenshot (1233).png)
+
+
+![Test Image 4](C:\Users\ISHINI\OneDrive\Pictures\Screenshots)
 
 
